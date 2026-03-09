@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document QA Bot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="split-view">
+    <div class="left-panel">
+      <h2>📄 Upload PDF</h2>
+      <div class="upload-area" id="upload-area">
+        <input type="file" id="file-input" accept=".pdf" hidden>
+        <p>Click or drag a PDF here</p>
+      </div>
+      <div id="doc-info" class="doc-info hidden">
+        <p><strong id="doc-name"></strong></p>
+        <p id="doc-stats"></p>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h2>💬 Ask Questions</h2>
+      <div id="chat" class="chat"></div>
+      <div class="input-bar">
+        <input type="text" id="question" placeholder="Ask something about the document..." disabled>
+        <button id="ask-btn" disabled>Ask</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
